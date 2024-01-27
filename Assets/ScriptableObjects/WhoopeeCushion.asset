@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: WhoopeeCushion
   m_EditorClassIdentifier: 
   ID: 0
-  itemName: 
+  itemName: Whoopee Cushion
   itemDescription: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 649107933913993945, guid: f7fe9cd2206dc3248a264da2166d20f9, type: 3}
   Icon: {fileID: 0}
-  contraband: 0
+  contraband: 1

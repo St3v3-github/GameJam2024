@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: LaxativePills
   m_EditorClassIdentifier: 
   ID: 0
-  itemName: 
+  itemName: Laxative Pills
   itemDescription: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 5091967037472059288, guid: 3d250edd34380744caecde96c2d63593, type: 3}
   Icon: {fileID: 0}
+  contraband: 1
