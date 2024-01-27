@@ -7,13 +7,19 @@ public class PrankLocation : MonoBehaviour, IPrankable
 {
     public List<PrankItem> requiredItems;
     public List<PrankEvents> requiredEvents;
+    public bool active = false;
     public bool completed = false;
+
+    public Prank prankeffect;
 
     public void Prank(Inventory inv)
     {
+        Debug.Log("ket");
         if (CheckPrerequisites(inv))
         {
-            Destroy(this.gameObject);
+            Debug.Log("kev");
+            prankeffect.startPrank();
+            completed = true;
         }
     }
 
@@ -33,7 +39,7 @@ public class PrankLocation : MonoBehaviour, IPrankable
     {
         bool ItemCheck = CheckItemList(inv.items);
         bool EventCheck = CheckEventList();
-        if (ItemCheck && EventCheck)
+        if (ItemCheck && EventCheck && active && !completed)
         {
             return true;
         }
