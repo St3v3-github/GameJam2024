@@ -23,10 +23,10 @@ public class AudioManager : MonoBehaviour
         eventInstances = new List<EventInstance>();
     }
 
-    //private void Start()
-    //{
-        //InitializeMusic(FMODEvents.instance.music);
-    //}
+    private void Start()
+    {
+        InitializeMusic(FMODEvents.instance.music);
+    }
 
     private void InitializeMusic(EventReference musicEventReference)
     {

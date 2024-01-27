@@ -23,6 +23,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Player Laugh SFX")]
     [field: SerializeField] public EventReference Player_LaughSound { get; private set; }
 
+    [field: Header("Music")]
+    [field: SerializeField] public EventReference music { get; private set; }
+
     public static FMODEvents instance { get; private set; }
 
     private void Awake()

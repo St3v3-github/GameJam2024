@@ -513,6 +513,13 @@ MonoBehaviour:
       Data3: -969279609
       Data4: -1855009384
     Path: event:/SFX/Player laugh
+  <music>k__BackingField:
+    Guid:
+      Data1: 782280968
+      Data2: 1269907103
+      Data3: -1405158741
+      Data4: -1743438164
+    Path: event:/Background/Office Ambience
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
