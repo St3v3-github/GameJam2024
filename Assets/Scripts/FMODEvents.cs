@@ -23,6 +23,24 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Player Laugh SFX")]
     [field: SerializeField] public EventReference Player_LaughSound { get; private set; }
 
+    [field: Header("Boss Laugh SFX")]
+    [field: SerializeField] public EventReference Boss_LaughSound { get; private set; }
+
+    [field: Header("Crowd Laugh SFX")]
+    [field: SerializeField] public EventReference Crowd_LaughSound { get; private set; }
+
+    [field: Header("Gunshot SFX")]
+    [field: SerializeField] public EventReference GunSound { get; private set; }
+
+    [field: Header("item SFX")]
+    [field: SerializeField] public EventReference itemSound { get; private set; }
+
+    [field: Header("Poisoned SFX")]
+    [field: SerializeField] public EventReference PoisonSound { get; private set; }
+
+    [field: Header("Scream SFX")]
+    [field: SerializeField] public EventReference ScreamSound { get; private set; }
+
     [field: Header("Music")]
     [field: SerializeField] public EventReference music { get; private set; }
 

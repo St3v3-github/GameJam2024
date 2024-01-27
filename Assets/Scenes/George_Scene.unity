@@ -513,6 +513,48 @@ MonoBehaviour:
       Data3: -969279609
       Data4: -1855009384
     Path: event:/SFX/Player laugh
+  <Boss_LaughSound>k__BackingField:
+    Guid:
+      Data1: -1568668976
+      Data2: 1124062102
+      Data3: 1261603717
+      Data4: -515701948
+    Path: event:/SFX/Boss Laugh
+  <Crowd_LaughSound>k__BackingField:
+    Guid:
+      Data1: -1193436108
+      Data2: 1297202611
+      Data3: -830318957
+      Data4: -1725428435
+    Path: event:/SFX/Crowd Laugh
+  <GunSound>k__BackingField:
+    Guid:
+      Data1: -1334077942
+      Data2: 1136849461
+      Data3: 948305831
+      Data4: 1884453495
+    Path: event:/SFX/gunshot
+  <itemSound>k__BackingField:
+    Guid:
+      Data1: -25047852
+      Data2: 1316753555
+      Data3: -106509408
+      Data4: -281361988
+    Path: event:/SFX/item_pickup
+  <PoisonSound>k__BackingField:
+    Guid:
+      Data1: -540071669
+      Data2: 1240791310
+      Data3: -1955972709
+      Data4: 742408260
+    Path: event:/SFX/Poison
+  <ScreamSound>k__BackingField:
+    Guid:
+      Data1: 785829149
+      Data2: 1146225828
+      Data3: -400027761
+      Data4: -1839990896
+    Path: event:/SFX/scream
   <music>k__BackingField:
     Guid:
       Data1: 782280968
