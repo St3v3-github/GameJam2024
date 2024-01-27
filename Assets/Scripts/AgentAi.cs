@@ -64,4 +64,9 @@ public class AgentAi : MonoBehaviour
     {
         distracted = true;
     }
+
+    public void OnFootstep()
+    {
+
+    }
 }
