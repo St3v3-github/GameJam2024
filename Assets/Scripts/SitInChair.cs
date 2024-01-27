@@ -8,9 +8,13 @@ public class SitInChair : MonoBehaviour, IInteractable
 
     private Transform savedPlayerPos;
 
+
     public void Interact()
     {
-        Debug.Log("Hello");
+        savedPlayerPos = player.transform;
+
+        player.transform.position = transform.position;
+        player.transform.rotation = transform.rotation;
     }
 }
 

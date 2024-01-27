@@ -15,12 +15,9 @@ public class PlayerInteraction : MonoBehaviour
     public Image popupImage;
     public TextMeshProUGUI popupText;
 
-    [SerializeField] GameObject dialogueMangerObject;
-    private DialogueManager dialogueManagerScript;
-
     void Start()
     {
-        dialogueManagerScript = dialogueMangerObject.GetComponent<DialogueManager>();
+
     }
 
     void Update()
@@ -115,11 +112,7 @@ public class PlayerInteraction : MonoBehaviour
             interactText.gameObject.SetActive(false);
         }
 
-        //Close Dialogue
-        if(Input.GetKey(KeyCode.Q)) 
-        {
-            dialogueManagerScript.HideText();
-        }
+
     }
 
     public void PickUpItem(PrankItem item)
