@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
         filePath = Application.dataPath + "/TextFiles/Dialogue.txt";
         allLines = System.IO.File.ReadAllLines(filePath);
 
-        ShowText(5);
+        //ShowText(5);
     }
 
     // Update is called once per frame
