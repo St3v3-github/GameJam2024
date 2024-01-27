@@ -557,6 +557,148 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3379138701731347967, guid: 6ee64affdcdc9af418cac77a01fdde39, type: 3}
   m_PrefabInstance: {fileID: 1860790617}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &112029129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112029130}
+  - component: {fileID: 112029131}
+  m_Layer: 0
+  m_Name: FMODEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112029130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112029129}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2085915746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112029131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112029129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c6b3d523b1b9a468f5b2d3672278b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <FartSound>k__BackingField:
+    Guid:
+      Data1: 642160139
+      Data2: 1282626166
+      Data3: -52189812
+      Data4: -1015760944
+    Path: event:/SFX/whoopie cushion
+  <ShockSound>k__BackingField:
+    Guid:
+      Data1: 1846352245
+      Data2: 1278904507
+      Data3: -897963612
+      Data4: -1080572176
+    Path: event:/SFX/shock
+  <DoorSound>k__BackingField:
+    Guid:
+      Data1: -27311301
+      Data2: 1109935578
+      Data3: 358469009
+      Data4: 1259728988
+    Path: event:/SFX/door_open_close
+  <IgnitionSound>k__BackingField:
+    Guid:
+      Data1: 1630719598
+      Data2: 1282578517
+      Data3: -1733652548
+      Data4: 5561470
+    Path: event:/SFX/ignition
+  <SplatterSound>k__BackingField:
+    Guid:
+      Data1: 42625109
+      Data2: 1278695449
+      Data3: 2009845182
+      Data4: 929904488
+    Path: event:/SFX/kill splat
+  <Player_LaughSound>k__BackingField:
+    Guid:
+      Data1: -2084249322
+      Data2: 1254525725
+      Data3: -969279609
+      Data4: -1855009384
+    Path: event:/SFX/Player laugh
+  <Boss_LaughSound>k__BackingField:
+    Guid:
+      Data1: -1568668976
+      Data2: 1124062102
+      Data3: 1261603717
+      Data4: -515701948
+    Path: event:/SFX/Boss Laugh
+  <Crowd_LaughSound>k__BackingField:
+    Guid:
+      Data1: -1193436108
+      Data2: 1297202611
+      Data3: -830318957
+      Data4: -1725428435
+    Path: event:/SFX/Crowd Laugh
+  <GunSound>k__BackingField:
+    Guid:
+      Data1: -1334077942
+      Data2: 1136849461
+      Data3: 948305831
+      Data4: 1884453495
+    Path: event:/SFX/gunshot
+  <itemSound>k__BackingField:
+    Guid:
+      Data1: -25047852
+      Data2: 1316753555
+      Data3: -106509408
+      Data4: -281361988
+    Path: event:/SFX/item_pickup
+  <PoisonSound>k__BackingField:
+    Guid:
+      Data1: -540071669
+      Data2: 1240791310
+      Data3: -1955972709
+      Data4: 742408260
+    Path: event:/SFX/Poison
+  <ScreamSound>k__BackingField:
+    Guid:
+      Data1: 785829149
+      Data2: 1146225828
+      Data3: -400027761
+      Data4: -1839990896
+    Path: event:/SFX/scream
+  <DialogueSound>k__BackingField:
+    Guid:
+      Data1: 2097665787
+      Data2: 1134254798
+      Data3: 425786808
+      Data4: 1197598745
+    Path: event:/SFX/dialogue
+  <music>k__BackingField:
+    Guid:
+      Data1: 782280968
+      Data2: 1269907103
+      Data3: -1405158741
+      Data4: -1743438164
+    Path: event:/Background/Office Ambience
 --- !u!1001 &115752318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5927,13 +6069,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1829941066630950, guid: c1e5af2ff42787c4da9691a81d25269e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 179098250}
-    - targetCorrespondingSourceObject: {fileID: 1829941066630950, guid: c1e5af2ff42787c4da9691a81d25269e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 179098249}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e5af2ff42787c4da9691a81d25269e, type: 3}
 --- !u!4 &2014288838 stripped
 Transform:
@@ -6224,6 +6360,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba0e7de593a0de4b9495deadb1d9b4f, type: 3}
+--- !u!1 &2085915744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2085915746}
+  - component: {fileID: 2085915745}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2085915745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085915744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e5fd9e69b673047a488441825b753d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2085915746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085915744}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.199688, y: -1.9605262, z: 22.610327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 112029130}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!223 &2099580081 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 3204083928253207271, guid: 0f9d00747ef335e47afcc3f3f033ddc5, type: 3}
@@ -6870,3 +7051,7 @@ SceneRoots:
   - {fileID: 6491266860818433535}
   - {fileID: 4141488420875593695}
   - {fileID: 543450652555122995}
+  - {fileID: 62079732}
+  - {fileID: 1811912041}
+  - {fileID: 1980964480}
+  - {fileID: 2085915746}
