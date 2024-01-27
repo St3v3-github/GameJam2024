@@ -418,7 +418,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 128674, guid: 471247d5cf89b2c46bcde0f08524197e, type: 3}
       propertyPath: m_Name
-      value: Boss
+      value: LLoyd
       objectReference: {fileID: 0}
     - target: {fileID: 472912, guid: 471247d5cf89b2c46bcde0f08524197e, type: 3}
       propertyPath: m_LocalPosition.x
