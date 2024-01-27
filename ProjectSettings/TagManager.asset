@@ -4,6 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
+=======
+  - door
+>>>>>>> AI&Map
   - CinemachineTarget
   layers:
   - Default
@@ -12,8 +16,13 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< HEAD
   - Player
   - 
+=======
+  - Cam1
+  - Cam2
+>>>>>>> AI&Map
   - 
   - 
   - 
