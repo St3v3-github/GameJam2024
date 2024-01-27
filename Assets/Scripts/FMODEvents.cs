@@ -41,6 +41,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Scream SFX")]
     [field: SerializeField] public EventReference ScreamSound { get; private set; }
 
+    [field: Header("Dialogue SFX")]
+    [field: SerializeField] public EventReference DialogueSound { get; private set; }
+
     [field: Header("Music")]
     [field: SerializeField] public EventReference music { get; private set; }
 
