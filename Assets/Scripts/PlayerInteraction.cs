@@ -12,6 +12,8 @@ public class PlayerInteraction : MonoBehaviour
     public float raycastDistance = 3f;
     public KeyCode pickupKey = KeyCode.E;
     public TextMeshProUGUI interactText;
+    public Image popupImage;
+    public TextMeshProUGUI popupText;
 
     void Start()
     {
@@ -38,6 +40,13 @@ public class PlayerInteraction : MonoBehaviour
                     {
                         PickUpItem(item);
                     }
+
+                    //Pop up notifictation
+                    popupImage.gameObject.SetActive(true);
+                    popupText.gameObject.SetActive(true);
+                    popupImage.sprite = item.Icon;
+                    popupText.text = item.itemName;
+                    StartCoroutine(timerCoroutine());
                 }
 
                 // InteractableObject
@@ -45,6 +54,13 @@ public class PlayerInteraction : MonoBehaviour
                 if (interactable != null)
                 {
                     interactable.Interact();
+                }
+
+                // InteractableObject
+                IPrankable prankable = hit.collider.GetComponent<IPrankable>();
+                if (prankable != null)
+                {
+                    prankable.Prank(this.gameObject.GetComponent<Inventory>());
                 }
 
             }
@@ -59,11 +75,30 @@ public class PlayerInteraction : MonoBehaviour
             // Check if the hit object has a script with the ItemPickup component
             IPickupable pickupable = hitForText.collider.GetComponent<IPickupable>();
             IInteractable interactable = hitForText.collider.GetComponent<IInteractable>();
+            IPrankable prankable = hitForText.collider.GetComponent<IPrankable>();
             if (pickupable != null || interactable != null)
             {
-                // Display the interaction text
+                interactText.text = "Press " + pickupKey.ToString() + " to Pickup " + hitForText.collider.GetComponent<ItemPickup>().item.itemName;
+                interactText.gameObject.SetActive(true);
+
+            }
+            else if (interactable != null)
+            {
                 interactText.text = "Press " + pickupKey.ToString() + " to Interact";
                 interactText.gameObject.SetActive(true);
+            }
+            else if (prankable != null)
+            {
+                if (hitForText.collider.GetComponent<PrankLocation>().CheckPrerequisites(this.gameObject.GetComponent<Inventory>()))
+                {
+                    interactText.text = "Press " + pickupKey.ToString() + " to Prank";
+                    interactText.gameObject.SetActive(true);
+                }
+                else
+                {
+                    interactText.text = "Complete the steps to prank";
+                    interactText.gameObject.SetActive(true);
+                }
             }
             else
             {
@@ -83,5 +118,14 @@ public class PlayerInteraction : MonoBehaviour
     public void PickUpItem(PrankItem item)
     {
         playerInventory.AddItem(item);
+    }
+
+    private IEnumerator timerCoroutine()
+    {
+
+        yield return new WaitForSeconds(2f);
+        popupText.text = "";
+        popupImage.gameObject.SetActive(false);
+        popupText.gameObject.SetActive(false);
     }
 }
