@@ -1,0 +1,965 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1125 &1
+BuildReport:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Report
+  m_Summary:
+    buildStartTime:
+      serializedVersion: 2
+      ticks: 0
+    buildGUID: 00000000000000000000000000000000
+    platformName: 
+    platformGroupName: 
+    subtarget: 0
+    options: 0
+    assetBundleOptions: 0
+    outputPath: 
+    crc: 0
+    totalSize: 0
+    totalTimeTicks: 0
+    totalErrors: 0
+    totalWarnings: 0
+    buildType: 1
+    buildResult: 0
+  m_Files:
+  - path: Temp/AssetBundle_Assets_PolygonCity_Prefabs_Characters_Character_Male_Hoodie_01.prefab.unity3d/CAB-b1c5c97d5df65cf45be7f748d5438679
+    role: SharedAssets
+    id: 0
+    totalSize: 5234808
+  - path: Temp/AssetBundle_Assets_PolygonCity_Prefabs_Characters_Character_Male_Hoodie_01.prefab.unity3d/CAB-b1c5c97d5df65cf45be7f748d5438679.resS
+    role: StreamingResourceFile
+    id: 1
+    totalSize: 8388660
+  - path: Temp/AssetBundle_Assets_PolygonCity_Prefabs_Characters_Character_Male_Hoodie_01.prefab.unity3d
+    role: AssetBundle
+    id: 2
+    totalSize: 1325216
+  m_BuildSteps:
+  - stepName: Build Asset Bundles
+    durationTicks: 0
+    depth: 0
+    messages: []
+  m_Appendices:
+  - {fileID: 4282348397066436220}
+  - {fileID: 1126453922511126654}
+  - {fileID: 1126237988534108322}
+  - {fileID: 1126443934628824330}
+--- !u!1126 &1126237988534108322
+PackedAssets:
+  m_ShortPath: CAB-b1c5c97d5df65cf45be7f748d5438679.resS
+  m_Overhead: 0
+  m_Contents:
+  - fileID: 0
+    classID: 28
+    packedSize: 1398128
+    offset: 0
+    sourceAssetGUID: 2da74f2130b2ca74faacbcaaa83c5a44
+    buildTimeAssetPath: Assets/PolygonCity/Textures/PolygonCity_Texture_Metallic.tga
+  - fileID: 0
+    classID: 28
+    packedSize: 5592404
+    offset: 0
+    sourceAssetGUID: b993ae890161b184188e417d77e0e1a3
+    buildTimeAssetPath: Assets/PolygonCity/Textures/PolygonCity_Texture_Normal.png
+  - fileID: 0
+    classID: 28
+    packedSize: 699064
+    offset: 0
+    sourceAssetGUID: ed8c76cfaa7f4f04da86bd288543e61c
+    buildTimeAssetPath: Assets/PolygonCity/Textures/Emissive_01.png
+  - fileID: 0
+    classID: 28
+    packedSize: 699064
+    offset: 0
+    sourceAssetGUID: fbde5f73f39181f4d9c7e24c34f0bdf8
+    buildTimeAssetPath: Assets/PolygonCity/Textures/PolygonCity_Texture_01_A.png
+--- !u!1126 &1126443934628824330
+PackedAssets:
+  m_ShortPath: unitystream.unity3d
+  m_Overhead: 1325216
+  m_Contents: []
+--- !u!1126 &1126453922511126654
+PackedAssets:
+  m_ShortPath: CAB-b1c5c97d5df65cf45be7f748d5438679
+  m_Overhead: 57423
+  m_Contents:
+  - fileID: 1
+    classID: 142
+    packedSize: 4916
+    offset: 0
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: AssetBundle Object
+  - fileID: 2
+    classID: 21
+    packedSize: 1004
+    offset: 0
+    sourceAssetGUID: 62e25ef75a2216f418d06453c9ad15cb
+    buildTimeAssetPath: Assets/PolygonCity/Materials/PolygonCity_Mat_01_A.mat
+  - fileID: 3
+    classID: 28
+    packedSize: 200
+    offset: 0
+    sourceAssetGUID: 2da74f2130b2ca74faacbcaaa83c5a44
+    buildTimeAssetPath: Assets/PolygonCity/Textures/PolygonCity_Texture_Metallic.tga
+  - fileID: 4
+    classID: 28
+    packedSize: 200
+    offset: 0
+    sourceAssetGUID: b993ae890161b184188e417d77e0e1a3
+    buildTimeAssetPath: Assets/PolygonCity/Textures/PolygonCity_Texture_Normal.png
+  - fileID: 5
+    classID: 28
+    packedSize: 184
+    offset: 0
+    sourceAssetGUID: ed8c76cfaa7f4f04da86bd288543e61c
+    buildTimeAssetPath: Assets/PolygonCity/Textures/Emissive_01.png
+  - fileID: 6
+    classID: 28
+    packedSize: 196
+    offset: 0
+    sourceAssetGUID: fbde5f73f39181f4d9c7e24c34f0bdf8
+    buildTimeAssetPath: Assets/PolygonCity/Textures/PolygonCity_Texture_01_A.png
+  - fileID: 7
+    classID: 43
+    packedSize: 468176
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 8
+    classID: 43
+    packedSize: 378480
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 9
+    classID: 43
+    packedSize: 402264
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 10
+    classID: 43
+    packedSize: 381956
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 11
+    classID: 43
+    packedSize: 414728
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 12
+    classID: 43
+    packedSize: 460692
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 13
+    classID: 43
+    packedSize: 452624
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 14
+    classID: 43
+    packedSize: 516096
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 15
+    classID: 43
+    packedSize: 467136
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 16
+    classID: 48
+    packedSize: 1195280
+    offset: 0
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 17
+    classID: 90
+    packedSize: 19032
+    offset: 0
+    sourceAssetGUID: 897b34267f422c1499700402763d096e
+    buildTimeAssetPath: Assets/PolygonCity/Models/Characters.fbx
+  - fileID: 18
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 19
+    classID: 1
+    packedSize: 31
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 20
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 21
+    classID: 1
+    packedSize: 63
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 22
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 23
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 24
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 25
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 26
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 27
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 28
+    classID: 1
+    packedSize: 43
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 29
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 30
+    classID: 1
+    packedSize: 31
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 31
+    classID: 1
+    packedSize: 43
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 32
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 33
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 34
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 35
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 36
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 37
+    classID: 1
+    packedSize: 63
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 38
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 39
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 40
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 41
+    classID: 1
+    packedSize: 63
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 42
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 43
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 44
+    classID: 1
+    packedSize: 43
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 45
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 46
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 47
+    classID: 1
+    packedSize: 31
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 48
+    classID: 1
+    packedSize: 63
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 49
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 50
+    classID: 1
+    packedSize: 63
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 51
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 52
+    classID: 1
+    packedSize: 43
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 53
+    classID: 1
+    packedSize: 63
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 54
+    classID: 1
+    packedSize: 43
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 55
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 56
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 57
+    classID: 1
+    packedSize: 43
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 58
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 59
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 60
+    classID: 1
+    packedSize: 67
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 61
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 62
+    classID: 1
+    packedSize: 31
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 63
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 64
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 65
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 66
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 67
+    classID: 1
+    packedSize: 31
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 68
+    classID: 1
+    packedSize: 43
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 69
+    classID: 1
+    packedSize: 67
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 70
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 71
+    classID: 1
+    packedSize: 43
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 72
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 73
+    classID: 1
+    packedSize: 39
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 74
+    classID: 1
+    packedSize: 63
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 75
+    classID: 1
+    packedSize: 35
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 76
+    classID: 1
+    packedSize: 63
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 77
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 78
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 79
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 80
+    classID: 4
+    packedSize: 188
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 81
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 82
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 83
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 84
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 85
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 86
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 87
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 88
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 89
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 90
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 91
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 92
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 93
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 94
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 95
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 96
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 97
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 98
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 99
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 100
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 101
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 102
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 103
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 104
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 105
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 106
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 107
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 108
+    classID: 4
+    packedSize: 104
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 109
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 110
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 111
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 112
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 113
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 114
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 115
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 116
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 117
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 118
+    classID: 4
+    packedSize: 104
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 119
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 120
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 121
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 122
+    classID: 4
+    packedSize: 92
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 123
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 124
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 125
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 126
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 127
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 128
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 129
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 130
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 131
+    classID: 4
+    packedSize: 104
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 132
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 133
+    classID: 4
+    packedSize: 80
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 134
+    classID: 4
+    packedSize: 104
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 135
+    classID: 4
+    packedSize: 68
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 136
+    classID: 95
+    packedSize: 56
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 137
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 138
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 139
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 140
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 141
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 142
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 143
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 144
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+  - fileID: 145
+    classID: 137
+    packedSize: 776
+    offset: 0
+    sourceAssetGUID: 48b470c6a762f60438c631f219257520
+    buildTimeAssetPath: Assets/PolygonCity/Prefabs/Characters/Character_Male_Hoodie_01.prefab
+--- !u!668709126 &4282348397066436220
+BuiltAssetBundleInfoSet:
+  bundleInfos:
+  - bundleName: Temp/AssetBundle_Assets_PolygonCity_Prefabs_Characters_Character_Male_Hoodie_01.prefab.unity3d
+    bundleArchiveFile: 2
+    packagedFileIndices: 0000000001000000

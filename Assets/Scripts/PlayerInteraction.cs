@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEditor.Progress;
 
 public class PlayerInteraction : MonoBehaviour
@@ -9,6 +11,7 @@ public class PlayerInteraction : MonoBehaviour
 
     public float raycastDistance = 3f;
     public KeyCode pickupKey = KeyCode.E;
+    public TextMeshProUGUI interactText;
 
     void Start()
     {
@@ -46,6 +49,35 @@ public class PlayerInteraction : MonoBehaviour
 
             }
         }
+
+        // Check for the raycast hit without pressing the key to show the interaction text
+        Ray rayForText = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+        RaycastHit hitForText;
+
+        if (Physics.Raycast(rayForText, out hitForText, raycastDistance))
+        {
+            // Check if the hit object has a script with the ItemPickup component
+            IPickupable pickupable = hitForText.collider.GetComponent<IPickupable>();
+            IInteractable interactable = hitForText.collider.GetComponent<IInteractable>();
+            if (pickupable != null || interactable != null)
+            {
+                // Display the interaction text
+                interactText.text = "Press " + pickupKey.ToString() + " to Interact";
+                interactText.gameObject.SetActive(true);
+            }
+            else
+            {
+                // Hide the interaction text if not aiming at an item
+                interactText.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            // Hide the interaction text if not aiming at anything
+            interactText.gameObject.SetActive(false);
+        }
+
+
     }
 
     public void PickUpItem(PrankItem item)
