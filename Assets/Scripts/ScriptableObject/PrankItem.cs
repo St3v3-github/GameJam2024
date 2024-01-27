@@ -9,4 +9,5 @@ public class PrankItem : ScriptableObject
     public string itemName;
     public string itemDescription;
     public GameObject prefab;
+    public Sprite Icon;
 }

@@ -15,4 +15,5 @@ MonoBehaviour:
   ID: 0
   itemName: Water Bottle
   itemDescription: Sample Item
-  prefab: {fileID: 0}
+  prefab: {fileID: 7450132746274506345, guid: 88dc4c5e6094b514180af631c1fd52d4, type: 3}
+  Icon: {fileID: 21300000, guid: bd2b56ee069d3f74cacef503dfb003c4, type: 3}
