@@ -52,6 +52,10 @@ public class ItemPickup : MonoBehaviour, IPickupable
             }
 
             Sprite mySprite = Sprite.Create(getAssetPreview, new Rect(0.0f, 0.0f, getAssetPreview.width, getAssetPreview.height), new Vector2(0.5f, 0.5f), 100.0f);
+            if (mySprite == null)
+            {
+                return;
+            }
             item.Icon = mySprite;
             fetched = true;
         }
