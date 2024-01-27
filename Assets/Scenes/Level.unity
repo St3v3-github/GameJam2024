@@ -1136,7 +1136,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 90274613}
     - target: {fileID: 7882754366730308568, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 897b34267f422c1499700402763d096e, type: 3}
+    - target: {fileID: 7882754366730308568, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7882754366730308568, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Root'\n\tTransform 'IndexFinger_02'\n\tTransform
+        'Elbow_R'\n\tTransform 'Finger_02'\n\tTransform 'Finger_03'\n\tTransform
+        'Ball_L'\n\tTransform 'Thumb_02'\n\tTransform 'Ball_R'\n\tTransform 'Clavicle_L'\n\tTransform
+        'Finger_01'\n\tand more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7882754366730308568, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8709273048632901536, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}

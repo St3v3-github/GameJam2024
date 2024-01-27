@@ -32,23 +32,29 @@ public class AgentAi : MonoBehaviour
 
         distanceToWaypoint = Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position);
 
-        if (distanceToWaypoint <= 1.0f) 
+        if (distanceToWaypoint <= 1.0f && currentWaypointIndex == 0) 
         {
-            StartCoroutine(WalkingDelay());
+            StartCoroutine(TalkingOnPhoneAnim());
+            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
+        }
+        else if (distanceToWaypoint <= 1.0f && currentWaypointIndex == 0)
+        {
+            StartCoroutine(TalkingOnPhoneAnim());
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
         }
 
         navMeshAgent.SetDestination(waypoints[currentWaypointIndex].position);
     }
 
-    private IEnumerator WalkingDelay()
+    private IEnumerator TalkingOnPhoneAnim()
     {
         navMeshAgent.speed = 0.0f;
-        animator.SetBool("IsIdle", true);
+        animator.SetTrigger("TalkingOnPhone");
         animator.SetBool("IsWalking", false);
-        yield return new WaitForSeconds(5.5f);
+        yield return new WaitForSeconds(10.0f);
+        animator.SetTrigger("HangingCall");
+        yield return new WaitForSeconds(5.0f);
         animator.SetBool("IsWalking", true);
-        animator.SetBool("IsIdle", false);
         navMeshAgent.speed = 2.0f;
     }
 }
