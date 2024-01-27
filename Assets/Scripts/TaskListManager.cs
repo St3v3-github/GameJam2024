@@ -5,23 +5,21 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class DialogueManager : MonoBehaviour
+public class TaskListManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text textMeshPro;
     private string filePath;
     string[] allLines;
 
-    private int currentLine;
-
-    [SerializeField] private Canvas DialogueCanvas;
+    private int currentLine = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        filePath = Application.dataPath + "/TextFiles/Dialogue.txt";
+        filePath = Application.dataPath + "/TextFiles/TaskList.txt";
         allLines = System.IO.File.ReadAllLines(filePath);
 
-        //ShowText(5);
+        UpdateTaskList();
     }
 
     // Update is called once per frame
@@ -30,16 +28,10 @@ public class DialogueManager : MonoBehaviour
         
     }
 
-    void ShowText(int lineNumber)
+    void UpdateTaskList()
     {
-        DialogueCanvas.gameObject.SetActive(true);
+        currentLine++;
 
-        currentLine = lineNumber;
         textMeshPro.SetText(allLines[currentLine - 1]);
-    }
-
-    void HideText()
-    {
-        DialogueCanvas.gameObject.SetActive(false);
     }
 }

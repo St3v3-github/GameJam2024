@@ -1,1 +1,42 @@
 Test Diaglogue, Hello world!
+
+//Item hints
+//Whoopie cushion hints
+You should find a whoopie cushion. Im sure I saw one somewhere.
+I think I saw a whoopie cushion in the staffroom.
+*Third whoopie cushion hint*
+
+//Screwdriver hints
+I think you might need a screwdriver, hehe.
+Theres always a screwdriver in the closet, if you need one.
+*Third screwdriver hint*
+
+//Closet key hints
+The closet is locked, but theres a key for it somewhere.
+The Boss Man keeps the key for the closet in his office.
+*Third closet key hint*
+
+//Laxatives 
+Umm, why are you looking for laxatives?
+Psst, there's laxatives in the bathroom.
+*Third laxative hint*
+
+//Family Portrait hints
+The Boss really cares about his family portrait.
+You can work out where the Boss's family portrait is.
+Aw, the Boss keeps a portait of his family on his desk.
+
+//Drugs hint
+Why would there be drugs in the office?
+You are the only person that would keep drugs in the office.
+Hey, so you still keep your drugs in your desk.
+
+//Lighter hints
+Sorry, I don't have a lighter.
+Sean will probably have a lighter.
+Sean keeps a lighter in his desk I think.
+
+//Weapon hints
+A weapon? What are you talking about?
+Nah, I left my piece at home.
+George seems like the type to be packing.
