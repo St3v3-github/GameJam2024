@@ -493,14 +493,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 4357033517498347740, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4357033517498347740, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 40db3173a05ae3242b1c182a09b0a183, type: 2}
     - target: {fileID: 4744806996829341361, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 55
@@ -508,10 +500,6 @@ PrefabInstance:
     - target: {fileID: 4774349979780341705, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5694579686198220669, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6144519950851707120, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
       propertyPath: m_Layer
@@ -569,14 +557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4357033517498347740, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6258463932727858647, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1001989369}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
 --- !u!1 &489506452
 GameObject:
@@ -684,27 +668,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1001989358 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6258463932727858647, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
-  m_PrefabInstance: {fileID: 392590439}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1001989369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001989358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138fd0bfb1d01d34f87cc566fc3b0b6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  headTransform: {fileID: 1887830576}
-  bobbingSpeed: 20
-  bobbingAmount: 5
-  bobbingDuration: 3
 --- !u!1 &1583548317
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,11 +736,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1887830576 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4357033517488597364, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
-  m_PrefabInstance: {fileID: 392590439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2091282999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -864,6 +822,7 @@ GameObject:
   - component: {fileID: 4187268114490836}
   - component: {fileID: 4187268114490838}
   - component: {fileID: 4187268114490837}
+  - component: {fileID: 4187268114490839}
   m_Layer: 0
   m_Name: Sample Prank
   m_TagString: Untagged
@@ -902,7 +861,9 @@ MonoBehaviour:
   requiredItems:
   - {fileID: 11400000, guid: fc0fa7320f137124da705b6bc8453bac, type: 2}
   requiredEvents: []
+  active: 1
   completed: 0
+  prankeffect: {fileID: 4187268114490839}
 --- !u!65 &4187268114490838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -924,6 +885,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2, y: 1, z: 2.3}
   m_Center: {x: 0.65, y: 0.56, z: 0.025}
+--- !u!114 &4187268114490839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749705720341430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f007ea1a198fe458ae33c91fe76932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4955638383969386
 Transform:
   m_ObjectHideFlags: 0
