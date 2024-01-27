@@ -10,6 +10,7 @@ public class PrankManager : MonoBehaviour
     public int index = 0;
     public int hintIndex = 0;
     private float timer = 0;
+    public GameObject CurrentNPC;
 
     // Start is called before the first frame update
     void Start()
