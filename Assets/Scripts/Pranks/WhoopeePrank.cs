@@ -10,5 +10,6 @@ public class WhoopeePrank : Prank
     {
         Debug.Log("WHOOPeeED");
         GameObject obj = Instantiate(whoopee, whoopeeLocation);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.FartSound, this.transform.position);
     }
 }
