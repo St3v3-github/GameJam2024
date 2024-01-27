@@ -9,6 +9,7 @@ public class AgentAi : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     //[SerializeField] private float speed = 2.0f;
     [SerializeField] private int currentWaypointIndex = 0;
+    [SerializeField] private float distanceToWaypoint;
 
     // Start is called before the first frame update
     private void Start()
@@ -45,11 +46,11 @@ public class AgentAi : MonoBehaviour
             return;
         }
 
-        float distanceToWaypoint = Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position);
+        distanceToWaypoint = Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position);
 
         if (distanceToWaypoint <= 3.0f) 
         {
-            currentWaypointIndex = (currentWaypointIndex+ 1) % waypoints.Count;
+            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
         }
 
         navMeshAgent.SetDestination(waypoints[currentWaypointIndex].position);
