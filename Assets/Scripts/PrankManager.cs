@@ -19,6 +19,7 @@ public class PrankManager : MonoBehaviour
 
     //Locations
 
+
     //PrankPeople
 
     Prank currentPrank;
