@@ -10,6 +10,7 @@ public class AgentAi : MonoBehaviour
     [SerializeField] private int currentWaypointIndex = 0;
     [SerializeField] private float distanceToWaypoint;
     [SerializeField] private Animator animator;
+    public GameObject Phone;
 
     public bool distracted = false;
 
@@ -50,12 +51,14 @@ public class AgentAi : MonoBehaviour
 
     private IEnumerator TalkingOnPhoneAnim()
     {
+        Phone.SetActive(true);
         navMeshAgent.speed = 0.0f;
         animator.SetTrigger("TalkingOnPhone");
         animator.SetBool("IsWalking", false);
         yield return new WaitForSeconds(10.0f);
         animator.SetTrigger("HangingCall");
         yield return new WaitForSeconds(5.0f);
+        Phone.SetActive(false);
         animator.SetBool("IsWalking", true);
         navMeshAgent.speed = 2.0f;
     }
