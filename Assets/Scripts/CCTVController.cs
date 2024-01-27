@@ -8,12 +8,14 @@ public class CCTVController : MonoBehaviour
 {
 
     [SerializeField]
-    public GameObject[] cams;
+    public GameObject[] UI;
+    public GameObject[] Cams;
     private int camindex = 0;
     // Start is called before the first frame update
     void Start()
     {
-        cams[camindex].SetActive(true);  
+        UI[camindex].SetActive(true);
+        Cams[camindex].SetActive(true);
     }
 
     // Update is called once per frame
@@ -22,12 +24,13 @@ public class CCTVController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.C))
         {
             camindex++; 
-            if (camindex >= cams.Length)
+            if (camindex >= UI.Length)
             {
                 camindex =  0; 
             }
             ResetPrio();
-            cams[camindex].SetActive(true); 
+            UI[camindex].SetActive(true);
+            Cams[camindex].SetActive(true); 
             Debug.Log(camindex); 
 
         }
@@ -35,7 +38,13 @@ public class CCTVController : MonoBehaviour
 
     void ResetPrio()
     {
-        foreach (var cams in cams)
+        foreach (var GO in UI)
+        {
+            GO.SetActive(false);
+            
+        }
+
+        foreach(var cams in Cams)
         {
             cams.SetActive(false); 
         }
