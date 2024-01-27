@@ -32,16 +32,16 @@ public class AgentAi : MonoBehaviour
 
         distanceToWaypoint = Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position);
 
-        if (distanceToWaypoint <= 1.0f && currentWaypointIndex == 0) 
+        if (distanceToWaypoint <= 1.1f) 
         {
             StartCoroutine(TalkingOnPhoneAnim());
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
         }
-        else if (distanceToWaypoint <= 1.0f && currentWaypointIndex == 0)
+        /*else if (distanceToWaypoint <= 1.0f && currentWaypointIndex == 0)
         {
             StartCoroutine(TalkingOnPhoneAnim());
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
-        }
+        }*/
 
         navMeshAgent.SetDestination(waypoints[currentWaypointIndex].position);
     }
