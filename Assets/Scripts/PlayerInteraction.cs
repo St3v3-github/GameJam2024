@@ -13,9 +13,12 @@ public class PlayerInteraction : MonoBehaviour
     public KeyCode pickupKey = KeyCode.E;
     public TextMeshProUGUI interactText;
 
+    [SerializeField] GameObject dialogueMangerObject;
+    private DialogueManager dialogueManagerScript;
+
     void Start()
     {
-
+        dialogueManagerScript = dialogueMangerObject.GetComponent<DialogueManager>();
     }
 
     void Update()
@@ -77,7 +80,11 @@ public class PlayerInteraction : MonoBehaviour
             interactText.gameObject.SetActive(false);
         }
 
-
+        //Close Dialogue
+        if(Input.GetKey("Q")) 
+        {
+            dialogueManagerScript.HideText();
+        }
     }
 
     public void PickUpItem(PrankItem item)

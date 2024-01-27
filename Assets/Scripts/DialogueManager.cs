@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     private int currentLine;
 
-    [SerializeField] private Canvas DialogueCanvas;
+    [SerializeField] private Canvas dialogueCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
         filePath = Application.dataPath + "/TextFiles/Dialogue.txt";
         allLines = System.IO.File.ReadAllLines(filePath);
 
-        //ShowText(5);
+        ShowText(5);
     }
 
     // Update is called once per frame
@@ -32,14 +32,17 @@ public class DialogueManager : MonoBehaviour
 
     void ShowText(int lineNumber)
     {
-        DialogueCanvas.gameObject.SetActive(true);
+        dialogueCanvas.gameObject.SetActive(true);
 
         currentLine = lineNumber;
         textMeshPro.SetText(allLines[currentLine - 1]);
     }
 
-    void HideText()
+    public void HideText()
     {
-        DialogueCanvas.gameObject.SetActive(false);
+        if(dialogueCanvas.enabled)
+        {
+            dialogueCanvas.gameObject.SetActive(false);
+        }
     }
 }

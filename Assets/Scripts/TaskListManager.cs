@@ -19,7 +19,7 @@ public class TaskListManager : MonoBehaviour
         filePath = Application.dataPath + "/TextFiles/TaskList.txt";
         allLines = System.IO.File.ReadAllLines(filePath);
 
-        UpdateTaskList();
+        textMeshPro.SetText(allLines[currentLine - 1]);
     }
 
     // Update is called once per frame
