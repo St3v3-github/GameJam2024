@@ -11,6 +11,8 @@ public class AgentAi : MonoBehaviour
     [SerializeField] private float distanceToWaypoint;
     [SerializeField] private Animator animator;
 
+    public bool distracted = false;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -56,5 +58,10 @@ public class AgentAi : MonoBehaviour
         yield return new WaitForSeconds(5.0f);
         animator.SetBool("IsWalking", true);
         navMeshAgent.speed = 2.0f;
+    }
+
+    public void Distract()
+    {
+        distracted = true;
     }
 }

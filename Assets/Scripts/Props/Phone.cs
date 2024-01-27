@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Phone : MonoBehaviour, IInteractable
 {
-    PrankManager manager = FindObjectOfType<PrankManager>();
+    private PrankManager manager;
+    public PrankEvents distractEvent;
+
+    void Start()
+    {
+        manager = FindObjectOfType<PrankManager>();
+    }
 
     public void Interact()
     {
-        //manager.CurrentNPC.Distract();
+        manager.CurrentNPC.Distract();
+        distractEvent.completed = true;
     }
 }
