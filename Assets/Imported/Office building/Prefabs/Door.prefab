@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8567830602660370307}
   - component: {fileID: 731258545138382118}
   - component: {fileID: 7351994427960528425}
+  - component: {fileID: 5530712195341807516}
   m_Layer: 0
   m_Name: Toilet cabine.001
   m_TagString: door
@@ -29,14 +30,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419006528198489158}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071069, y: 0.000000029802319, z: -0.000000029802319, w: 0.70710677}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.98200023, y: 2.353999, z: 0.5459998}
   m_LocalScale: {x: 100, y: 99.99995, z: 99.999954}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8065290723282516976}
   m_Father: {fileID: 3348316935652771172}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &7896540535215446327
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -143,6 +144,27 @@ MonoBehaviour:
   OpenDoor: {fileID: 3843320612267634000}
   ClosedDoor: {fileID: 3843320612267634000}
   open: 0
+--- !u!95 &5530712195341807516
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419006528198489158}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1a8414bf6b21aa4fb508cb29f19b71c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2570964391059733958
 GameObject:
   m_ObjectHideFlags: 0
