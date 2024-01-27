@@ -21,11 +21,11 @@ TagManager:
   - UI
   - Player
   - Walls
-  - Obstructions
+  - 
   - PlayerLayer
   - 
-  - 
-  - 
+  - Target
+  - Obstruction
   - 
   - 
   - 
