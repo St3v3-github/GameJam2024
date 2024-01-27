@@ -241,6 +241,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &348606917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3243507726097511105, guid: 0f9d00747ef335e47afcc3f3f033ddc5, type: 3}
+  m_PrefabInstance: {fileID: 5932982095047871387}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &888976759
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +554,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1581748897743285989, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
+      propertyPath: dialogueMangerObject
+      value: 
+      objectReference: {fileID: 348606917}
     - target: {fileID: 7578430635839566081, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
       propertyPath: m_Name
       value: PlayerSystem

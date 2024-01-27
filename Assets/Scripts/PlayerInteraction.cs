@@ -116,7 +116,7 @@ public class PlayerInteraction : MonoBehaviour
         }
 
         //Close Dialogue
-        if(Input.GetKey("Q")) 
+        if(Input.GetKey(KeyCode.Q)) 
         {
             dialogueManagerScript.HideText();
         }
