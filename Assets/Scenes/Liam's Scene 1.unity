@@ -250,7 +250,7 @@ Transform:
   m_GameObject: {fileID: 175069263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 1.53, z: 5}
+  m_LocalPosition: {x: 5, y: 1.53, z: 4.99}
   m_LocalScale: {x: 5, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -917,10 +917,10 @@ MonoBehaviour:
   VisionAngle: 90
   VisionObstructingLayer:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 0
   PlayerLayer:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 0
   VisionConeResolution: 120
   DetectionRate: 1
   DetectionDecreaseRate: 0.5
