@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class PrankLocation : MonoBehaviour, IPrankable
 {
+    public PrankManager prankManager;
+
     public List<PrankItem> requiredItems;
     public List<PrankEvents> requiredEvents;
+    public List<string> instructions;
     public bool active = false;
     public bool completed = false;
 
@@ -20,6 +23,7 @@ public class PrankLocation : MonoBehaviour, IPrankable
             Debug.Log("kev");
             prankeffect.startPrank();
             completed = true;
+            prankManager.CompletePrank();
         }
     }
 

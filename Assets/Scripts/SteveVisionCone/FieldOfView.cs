@@ -14,7 +14,7 @@ public class FieldOfView : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask obstructionMask;
 
-    public bool canSeePlayer;
+    public bool Spotted;
 
     private void Start()
     {
@@ -47,14 +47,23 @@ public class FieldOfView : MonoBehaviour
                 float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
-                    canSeePlayer = true;
+                {
+                    Spotted = true;
+                    Debug.Log("Spotted)");
+                }
                 else
-                    canSeePlayer = false;
+                {
+                    Spotted = false;
+                }
             }
             else
-                canSeePlayer = false;
+            {
+                Spotted = false;
+            }
         }
-        else if (canSeePlayer)
-            canSeePlayer = false;
+        else if (Spotted)
+        {
+            Spotted = false;
+        }
     }
 }

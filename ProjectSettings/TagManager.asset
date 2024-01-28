@@ -12,6 +12,7 @@ TagManager:
   - button f2
   - button f1
   - button f6
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -26,6 +27,11 @@ TagManager:
   - 
   - Target
   - Obstruction
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

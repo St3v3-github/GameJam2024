@@ -10,4 +10,5 @@ public class PrankItem : ScriptableObject
     public string itemDescription;
     public GameObject prefab;
     public Sprite Icon;
+    public bool contraband;
 }

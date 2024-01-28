@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/George_Scene.unity.meta
+guid: f7fe06a4f6de15c4e951aa8ae4a6ea9e
+========
 guid: 68e4d2671315eaf449ee203e7cab9f34
 folderAsset: yes
+>>>>>>>> SteveVC_Takeover:Assets/Scripts/SteveVisionCone.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

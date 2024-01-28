@@ -39,6 +39,7 @@ public class PlayerInteraction : MonoBehaviour
                     if (item != null)
                     {
                         PickUpItem(item);
+                        AudioManager.instance.PlayOneShot(FMODEvents.instance.FartSound, this.transform.position);
                     }
 
                     //Pop up notifictation
@@ -76,7 +77,7 @@ public class PlayerInteraction : MonoBehaviour
             IPickupable pickupable = hitForText.collider.GetComponent<IPickupable>();
             IInteractable interactable = hitForText.collider.GetComponent<IInteractable>();
             IPrankable prankable = hitForText.collider.GetComponent<IPrankable>();
-            if (pickupable != null || interactable != null)
+            if (pickupable != null)
             {
                 interactText.text = "Press " + pickupKey.ToString() + " to Pickup " + hitForText.collider.GetComponent<ItemPickup>().item.itemName;
                 interactText.gameObject.SetActive(true);
