@@ -23,6 +23,13 @@ public class AudioManager : MonoBehaviour
         eventInstances = new List<EventInstance>();
     }
 
+    public void BlowUp()
+    {
+        musicEventInstance.setPaused(true);
+        //Destroy(gameObject);
+        //InitializeMusic(FMODEvents.instance.menu);
+    }
+
     private void Start()
     {
         InitializeMusic(FMODEvents.instance.music);
@@ -33,6 +40,11 @@ public class AudioManager : MonoBehaviour
         musicEventInstance = CreateEventInstance(musicEventReference);
         musicEventInstance.start();
     }
+
+    //private void StopMusic(EventReference musicEventReference)
+    //{
+        
+    //}
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {

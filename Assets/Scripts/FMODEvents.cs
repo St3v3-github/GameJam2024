@@ -53,6 +53,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Music")]
     [field: SerializeField] public EventReference music { get; private set; }
 
+    [field: Header("Menu")]
+    [field: SerializeField] public EventReference menu { get; private set; }
+
     [field: Header("Player Walking")]
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
 
