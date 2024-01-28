@@ -11,20 +11,21 @@ public class AgentAi : MonoBehaviour
     [SerializeField] protected int currentWaypointIndex = 0;
     [SerializeField] protected float distanceToWaypoint;
     [SerializeField] protected Animator animator;
-    [SerializeField] protected Transform intialTransform;
+    [SerializeField] protected Vector3 intialPos;
 
 
     public bool distracted = false;
+    public bool returning = false;
 
     // Start is called before the first frame update
     private void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        intialTransform = transform;
+        intialPos = transform.position;
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (!distracted)
         {
@@ -37,6 +38,10 @@ public class AgentAi : MonoBehaviour
                 Sitting();
             }
             
+        }
+        else
+        {
+            DistractCheck();
         }
 
     }
@@ -56,13 +61,28 @@ public class AgentAi : MonoBehaviour
     {
         distracted = true;
         navMeshAgent.SetDestination(distractLocation.position);
-        StartCoroutine(DistractTimer());
+        StartCoroutine(DistractTimer(time));
     }
 
-    private IEnumerator DistractTimer()
+    public void DistractCheck()
     {
-        yield return new WaitForSeconds(5.0f);
-        navMeshAgent.SetDestination(intialTransform.position);
+        if (returning)
+        {
+            float distance = Vector3.Distance(intialPos, transform.position);
+            if (distance <= 1.1f)
+            {
+                distracted = false;
+                returning = false;
+                Debug.Log("returned");
+            }
+        }
+    }
+
+    private IEnumerator DistractTimer(float time)
+    {
+        yield return new WaitForSeconds(time);
+        returning = true;
+        navMeshAgent.SetDestination(intialPos);
     }
 
         public void OnFootstep()
