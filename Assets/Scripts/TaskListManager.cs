@@ -13,6 +13,10 @@ public class TaskListManager : MonoBehaviour
 
     private int currentLine = 1;
 
+    private GameObject prankManagerObject;
+    private PrankManager prankManagerScript;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,18 +24,28 @@ public class TaskListManager : MonoBehaviour
         allLines = System.IO.File.ReadAllLines(filePath);
 
         textMeshPro.SetText(allLines[currentLine - 1]);
+
+        prankManagerObject = GameObject.Find("PrankManager");
+        prankManagerScript = prankManagerObject.GetComponent<PrankManager>();
+
+        GameObject player = GameObject.Find("PlayerCharacter");
+        Inventory invent = player.GetComponent<Inventory>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(prankManagerScript.index == 0)
+        {
+           
+        }
     }
 
-    void UpdateTaskList()
+    void UpdateTaskList(int newCurrentLine)
     {
-        currentLine++;
+        currentLine = newCurrentLine;
 
         textMeshPro.SetText(allLines[currentLine - 1]);
     }
+
 }
