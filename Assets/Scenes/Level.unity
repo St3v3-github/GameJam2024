@@ -6158,6 +6158,7 @@ MonoBehaviour:
   currentWaypointIndex: 0
   distanceToWaypoint: 0
   animator: {fileID: 0}
+  Phone: {fileID: 0}
   distracted: 0
 --- !u!4 &2014288838 stripped
 Transform:
