@@ -5,7 +5,7 @@ using UnityEngine;
 public class Phone : MonoBehaviour, IInteractable
 {
     private PrankManager manager;
-    public PrankEvents distractEvent;
+    public List<PrankEvents> distractEvents;
 
     void Start()
     {
@@ -14,7 +14,7 @@ public class Phone : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        manager.CurrentNPC.Distract(transform, 15f);
-        distractEvent.completed = true;
+        manager.CurrentNPC[0].Distract(transform, 15f);
+        distractEvents[0].completed = true;
     }
 }
