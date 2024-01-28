@@ -5,15 +5,20 @@ using UnityEngine;
 
 public class FieldOfView : MonoBehaviour
 {
+    #region Radius and angle settings
+    [Header("Radius and Angle")]
     public float radius;
     [Range(0, 360)]
     public float angle;
+    #endregion
 
-    public GameObject playerRef;
-
+    #region Layer Settings
+    [Header("Layers")]
     public LayerMask targetMask;
     public LayerMask obstructionMask;
+    #endregion
 
+    public GameObject playerRef;
     public bool Spotted;
 
     private void Start()
@@ -47,23 +52,14 @@ public class FieldOfView : MonoBehaviour
                 float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
-                {
                     Spotted = true;
-                    Debug.Log("Spotted)");
-                }
                 else
-                {
                     Spotted = false;
-                }
             }
             else
-            {
                 Spotted = false;
-            }
         }
         else if (Spotted)
-        {
             Spotted = false;
-        }
     }
 }

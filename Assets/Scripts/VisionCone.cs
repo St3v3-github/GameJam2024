@@ -109,7 +109,7 @@ public class VisionCone : MonoBehaviour
         detectionTimer += Time.deltaTime;
         if (detectionTimer >= detectionInterval)
         {
-            Debug.Log("Detection: " + currentDetection);
+            //Debug.Log("Detection: " + currentDetection);
             detectionTimer = 0f;
         }
     }
