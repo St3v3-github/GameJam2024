@@ -17,16 +17,21 @@ public class PrankManager : MonoBehaviour
     void Start()
     {
         PrankList[index].active = true;
+        foreach (PrankEvents pr in distractEvents)
+        {
+            pr.completed = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 30f)
+        if (timer >= 10f)
         {
-            if (hintIndex <= 3)
+            if (hintIndex < 3)
             {
+                timer = 0;
                 hintIndex += 1;
             }
         }
@@ -34,6 +39,7 @@ public class PrankManager : MonoBehaviour
 
     public void CompletePrank()
     {
+        timer = 0;
         index++;
         PrankList[index].active = true;
         hintIndex = 0;

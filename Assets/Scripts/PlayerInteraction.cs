@@ -84,7 +84,13 @@ public class PlayerInteraction : MonoBehaviour
             IPickupable pickupable = hitForText.collider.GetComponent<IPickupable>();
             IInteractable interactable = hitForText.collider.GetComponent<IInteractable>();
             IPrankable prankable = hitForText.collider.GetComponent<IPrankable>();
-            if (pickupable != null)
+            if (!GetComponent<CharacterController>().enabled)
+            {
+                interactText.text = "";
+                interactText.gameObject.SetActive(false);
+
+            }
+            else if (pickupable != null)
             {
                 interactText.text = "Press " + pickupKey.ToString() + " to Pickup " + hitForText.collider.GetComponent<ItemPickup>().item.itemName;
                 interactText.gameObject.SetActive(true);
@@ -97,7 +103,12 @@ public class PlayerInteraction : MonoBehaviour
             }
             else if (prankable != null)
             {
-                if (hitForText.collider.GetComponent<PrankLocation>().CheckPrerequisites(this.gameObject.GetComponent<Inventory>()))
+                if (hitForText.collider.GetComponent<PrankLocation>().completed)
+                {
+                    interactText.text = "";
+                    interactText.gameObject.SetActive(false);
+                }
+                else if (hitForText.collider.GetComponent<PrankLocation>().CheckPrerequisites(this.gameObject.GetComponent<Inventory>()))
                 {
                     interactText.text = "Press " + pickupKey.ToString() + " to Prank";
                     interactText.gameObject.SetActive(true);
