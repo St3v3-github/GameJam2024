@@ -8,9 +8,9 @@ public class WhoopeePrank : Prank
     public Transform whoopeeLocation;
     public GameObject whoopee;
     public GameObject employee;
-    public GameObject obj;
-    public GameObject confetti;
-    public bool placed = false;
+    private GameObject obj;
+    private GameObject confetti;
+    private bool placed = false;
 
     public override void Update()
     {
@@ -32,9 +32,11 @@ public class WhoopeePrank : Prank
     {
         placed = false;
         Debug.Log("WHOOPeeED");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         confetti.GetComponent<ParticleSystem>().Play();
         AudioManager.instance.PlayOneShot(FMODEvents.instance.FartSound, this.transform.position);
-        
+        yield return new WaitForSeconds(1f);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.Player_LaughSound, this.transform.position);
+
     }
 }

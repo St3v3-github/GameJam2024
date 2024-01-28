@@ -108,7 +108,7 @@ MonoBehaviour:
   instructions: []
   active: 0
   completed: 0
-  prankeffect: {fileID: 0}
+  prankeffect: {fileID: 8287076394994650731}
 --- !u!114 &8287076394994650731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whoopeeLocation: {fileID: 6213403205345866320}
   whoopee: {fileID: 649107933913993945, guid: 563186ab901c3d94da4daa2d020213c4, type: 3}
+  employee: {fileID: 0}
+  obj: {fileID: 0}
+  confetti: {fileID: 0}
+  placed: 0
 --- !u!1 &6533362951779717309
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,36 +5,17 @@ using UnityEngine.AI;
 
 public class FirePrank : Prank
 {
-    public Transform whoopeeLocation;
-    public GameObject whoopee;
-    public GameObject employee;
-    public GameObject obj;
-    public GameObject confetti;
-    public bool placed = false;
+    public Transform fireLocation;
+    public GameObject Fire;
 
-    public override void Update()
-    {
-        float distance = Vector3.Distance(employee.transform.position, transform.position);
-        if (distance <= 1.1f && placed)
-        {
-            StartCoroutine(Detonation());
-        }
-    }
+
+
 
     public override void startPrank()
     {
-        obj = Instantiate(whoopee, whoopeeLocation);
-        confetti = obj.transform.GetChild(0).gameObject;
-        placed = true;
+        GameObject obj = Instantiate(Fire, fireLocation.position, Quaternion.identity);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.IgnitionSound, this.transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.Player_LaughSound, this.transform.position);
     }
 
-    private IEnumerator Detonation()
-    {
-        placed = false;
-        Debug.Log("WHOOPeeED");
-        yield return new WaitForSeconds(2f);
-        confetti.GetComponent<ParticleSystem>().Play();
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.FartSound, this.transform.position);
-        
-    }
 }

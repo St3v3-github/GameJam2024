@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4630794303230292466}
   - component: {fileID: 5873026645253219883}
   - component: {fileID: 6715782303819170841}
-  - component: {fileID: 4022315515478148041}
   m_Layer: 0
   m_Name: Trash bin
   m_TagString: Untagged
@@ -84,28 +83,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4022315515478148041
-MeshCollider:
+--- !u!1 &5606056595231737955
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4299431951773716669}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: ac7a5a6eefc7d1949be944e712b4f9f5, type: 3}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8655938274663813847}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8655938274663813847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5606056595231737955}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.28, z: 0.09799957}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4633489588227457774}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7621023105376832407
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +124,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4633489588227457774}
   - component: {fileID: 4861009712058856990}
+  - component: {fileID: 8776956728722942042}
+  - component: {fileID: 8123985880152658330}
   m_Layer: 0
   m_Name: BinPrank
   m_TagString: Untagged
@@ -137,6 +147,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4630794303230292466}
+  - {fileID: 8655938274663813847}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4861009712058856990
@@ -156,8 +167,45 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b66c9db5574f4284399948e5f6abab9b, type: 2}
   - {fileID: 11400000, guid: b66c9db5574f4284399948e5f6abab9b, type: 2}
   - {fileID: 11400000, guid: b66c9db5574f4284399948e5f6abab9b, type: 2}
-  requiredEvents: []
+  - {fileID: 11400000, guid: feed1dbefedbbd54e8f438d5f1675f72, type: 2}
+  requiredEvents:
+  - {fileID: 11400000, guid: 4312e2093772f2b468eb57c32b8d7b91, type: 2}
   instructions: []
   active: 0
   completed: 0
   prankeffect: {fileID: 0}
+--- !u!114 &8776956728722942042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7621023105376832407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e431d02a751918b4281d5c07d3d6af7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLocation: {fileID: 8655938274663813847}
+  Fire: {fileID: 0}
+--- !u!65 &8123985880152658330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7621023105376832407}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 0.5, z: 0.4}
+  m_Center: {x: 0, y: 0.25, z: 0.09}

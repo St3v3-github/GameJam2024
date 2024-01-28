@@ -7,10 +7,11 @@ using UnityEngine.InputSystem;
 public class PrankManager : MonoBehaviour
 {
     public List<PrankLocation> PrankList;
+    public List<PrankEvents> distractEvents;
     public int index = 0;
     public int hintIndex = 0;
     private float timer = 0;
-    public AgentAi CurrentNPC;
+    public List<AgentAi> CurrentNPC;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +23,9 @@ public class PrankManager : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 60f)
+        if (timer >= 30f)
         {
-            if (hintIndex > 3)
+            if (hintIndex <= 3)
             {
                 hintIndex += 1;
             }

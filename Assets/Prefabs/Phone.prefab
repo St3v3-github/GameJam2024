@@ -46,7 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e73c724a522f3e4a88021b9d632a7de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distractEvent: {fileID: 11400000, guid: 8e484dc0ff0b05448a75e27c0c6326c5, type: 2}
+  distractEvents:
+  - {fileID: 11400000, guid: 8e484dc0ff0b05448a75e27c0c6326c5, type: 2}
+  - {fileID: 11400000, guid: 4312e2093772f2b468eb57c32b8d7b91, type: 2}
 --- !u!65 &541701722244066142
 BoxCollider:
   m_ObjectHideFlags: 0
