@@ -43,7 +43,11 @@ public class DetectionMeter : MonoBehaviour
     {
         if (detectionSlider.value >= 100) 
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.Boss_LaughSound, this.transform.position);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene("GameOver");
+
         }
     }
 
