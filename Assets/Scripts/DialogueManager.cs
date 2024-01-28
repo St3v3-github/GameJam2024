@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     private int currentLine;
 
+
     [SerializeField] private Canvas dialogueCanvas;
 
     // Start is called before the first frame update
@@ -27,10 +28,13 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKey(KeyCode.Q))
+        {
+            HideText();
+        }
     }
 
-    void ShowText(int lineNumber)
+    public void ShowText(int lineNumber)
     {
         dialogueCanvas.gameObject.SetActive(true);
 

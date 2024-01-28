@@ -1,10 +1,10 @@
-Test Diaglogue, Hello world!
+...
 
 //Item hints
 //Whoopie cushion hints
 You should find a whoopie cushion. Im sure I saw one somewhere.
-I think I saw a whoopie cushion in the staffroom.
-*Third whoopie cushion hint*
+I think I saw a whoopie cushion in the Bathroom.
+Who put that whoopie cushion in the bathroom bin?
 
 //Screwdriver hints
 I think you might need a screwdriver, hehe.
@@ -33,8 +33,8 @@ Hey, so you still keep your drugs in your desk.
 
 //Lighter hints
 Sorry, I don't have a lighter.
-Sean will probably have a lighter.
-Sean keeps a lighter in his desk I think.
+Someone will probably have a lighter.
+Maybe look on people's desks for a lighter.
 
 //Weapon hints
 A weapon? What are you talking about?

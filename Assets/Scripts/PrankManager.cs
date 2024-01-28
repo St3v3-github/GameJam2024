@@ -22,10 +22,11 @@ public class PrankManager : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 60f)
+        if (timer >= 10f)
         {
-            if (hintIndex > 3)
+            if (hintIndex < 3)
             {
+                timer = 0;
                 hintIndex += 1;
             }
         }
@@ -33,6 +34,7 @@ public class PrankManager : MonoBehaviour
 
     public void CompletePrank()
     {
+        timer = 0;
         index++;
         PrankList[index].active = true;
         hintIndex = 0;
