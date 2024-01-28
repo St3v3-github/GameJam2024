@@ -7,6 +7,7 @@ public class AgentBoss : AgentAi
 {
     public GameObject Phone;
 
+
     public override void Walking()
     {
         Debug.Log("running");

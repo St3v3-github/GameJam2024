@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class AgentAi : MonoBehaviour
 {
     public List<Transform> waypoints;
+    public bool sitting;
     protected NavMeshAgent navMeshAgent;
     [SerializeField] protected int currentWaypointIndex = 0;
     [SerializeField] protected float distanceToWaypoint;
@@ -27,12 +28,24 @@ public class AgentAi : MonoBehaviour
     {
         if (!distracted)
         {
-            Walking();
+            if (!sitting)
+            {
+                Walking();
+            }
+            else
+            {
+                Sitting();
+            }
+            
         }
 
     }
 
     public virtual void Walking()
+    {
+
+    }
+    public virtual void Sitting()
     {
 
     }
