@@ -27,7 +27,6 @@ public class NPCDialogue : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.Log(prankManagerScript.index);
 
         //Set Current Prank
         if (prankManagerScript.index == 0)
