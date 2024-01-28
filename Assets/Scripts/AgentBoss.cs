@@ -6,11 +6,35 @@ using UnityEngine.AI;
 public class AgentBoss : AgentAi
 {
     public GameObject Phone;
+    public Transform itemTransform;
+    private PrankItem confiscatedItem;
+    private bool toOffice = false;
 
+    public override void Update()
+    {
+        if (!distracted && !toOffice)
+        {
+            if (!sitting)
+            {
+                Walking();
+            }
+            else
+            {
+                Sitting();
+            }
+
+        }
+
+        if (toOffice)
+        {
+            WalkingtoOffice();
+        }
+        
+
+    }
 
     public override void Walking()
     {
-        Debug.Log("running");
 
         if (waypoints.Count == 0.0f) { return; }
         //if (distracted) { return; }
@@ -30,6 +54,16 @@ public class AgentBoss : AgentAi
 
         navMeshAgent.SetDestination(waypoints[currentWaypointIndex].position);
     }
+
+    public void WalkingtoOffice()
+    {
+        float distance = Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position);
+        if (distance <= 1.1f)
+        {
+            GameObject obj = Instantiate(confiscatedItem.prefab, itemTransform.position, Quaternion.identity);
+            toOffice = false;
+        }
+    }
     private IEnumerator TalkingOnPhoneAnim()
     {
         Phone.SetActive(true);
@@ -42,5 +76,12 @@ public class AgentBoss : AgentAi
         Phone.SetActive(false);
         animator.SetBool("IsWalking", true);
         navMeshAgent.speed = 2.0f;
+    }
+
+    public void Caught(PrankItem takenItem)
+    {
+        confiscatedItem = takenItem;
+        navMeshAgent.SetDestination(intialPos);
+        toOffice = true;
     }
 }

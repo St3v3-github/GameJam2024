@@ -44,8 +44,17 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Dialogue SFX")]
     [field: SerializeField] public EventReference DialogueSound { get; private set; }
 
+    [field: Header("Telephone SFX")]
+    [field: SerializeField] public EventReference phoneSound { get; private set; }
+
+    [field: Header("chair SFX")]
+    [field: SerializeField] public EventReference chairSound { get; private set; }
+
     [field: Header("Music")]
     [field: SerializeField] public EventReference music { get; private set; }
+
+    [field: Header("Player Walking")]
+    [field: SerializeField] public EventReference playerFootsteps { get; private set; }
 
     public static FMODEvents instance { get; private set; }
 
