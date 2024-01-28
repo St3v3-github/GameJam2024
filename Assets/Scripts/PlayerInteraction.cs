@@ -39,7 +39,7 @@ public class PlayerInteraction : MonoBehaviour
                     if (item != null)
                     {
                         PickUpItem(item);
-                        AudioManager.instance.PlayOneShot(FMODEvents.instance.FartSound, this.transform.position);
+                        AudioManager.instance.PlayOneShot(FMODEvents.instance.itemSound, this.transform.position);
                     }
 
                     //Pop up notifictation

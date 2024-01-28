@@ -699,6 +699,13 @@ MonoBehaviour:
       Data3: -1405158741
       Data4: -1743438164
     Path: event:/Background/Office Ambience
+  <playerFootsteps>k__BackingField:
+    Guid:
+      Data1: 1459802300
+      Data2: 1115876280
+      Data3: 271387272
+      Data4: 192259492
+    Path: event:/Background/Player Footsteps
 --- !u!1001 &115752318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6158,6 +6165,7 @@ MonoBehaviour:
   currentWaypointIndex: 0
   distanceToWaypoint: 0
   animator: {fileID: 0}
+  Phone: {fileID: 0}
   distracted: 0
 --- !u!4 &2014288838 stripped
 Transform:
