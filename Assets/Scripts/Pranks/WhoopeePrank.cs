@@ -11,6 +11,7 @@ public class WhoopeePrank : Prank
     private GameObject obj;
     private GameObject confetti;
     private bool placed = false;
+    public Animator animator;
 
     public override void Update()
     {
@@ -37,6 +38,7 @@ public class WhoopeePrank : Prank
         AudioManager.instance.PlayOneShot(FMODEvents.instance.FartSound, this.transform.position);
         yield return new WaitForSeconds(1f);
         AudioManager.instance.PlayOneShot(FMODEvents.instance.Player_LaughSound, this.transform.position);
+        animator.SetBool("IsAngry", true);
 
     }
 }

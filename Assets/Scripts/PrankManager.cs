@@ -17,6 +17,10 @@ public class PrankManager : MonoBehaviour
     void Start()
     {
         PrankList[index].active = true;
+        foreach (PrankEvents pr in distractEvents)
+        {
+            pr.completed = false;
+        }
     }
 
     // Update is called once per frame

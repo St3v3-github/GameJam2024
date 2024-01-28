@@ -395,6 +395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7426474685543132673}
   - component: {fileID: 4353884561083684751}
+  - component: {fileID: 5013255850126740001}
   m_Layer: 0
   m_Name: Shaun
   m_TagString: Untagged
@@ -437,7 +438,7 @@ Animator:
   m_GameObject: {fileID: 2195487321039397323}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 897b34267f422c1499700402763d096e, type: 3}
-  m_Controller: {fileID: 9100000, guid: 3ed6a4ec809a6ef48b382b3285002327, type: 2}
+  m_Controller: {fileID: 9100000, guid: c70ab0f239f52324ebc24b82a971a9f2, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -448,6 +449,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5013255850126740001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195487321039397323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4848c9d3e1165d42a83264db380d4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  sitting: 1
+  currentWaypointIndex: 0
+  distanceToWaypoint: 0
+  animator: {fileID: 4353884561083684751}
+  intialPos: {x: 0, y: 0, z: 0}
+  distracted: 0
+  returning: 0
 --- !u!1 &2336484197894371354
 GameObject:
   m_ObjectHideFlags: 0
