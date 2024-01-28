@@ -14,7 +14,7 @@ public class Phone : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        manager.CurrentNPC.Distract();
+        manager.CurrentNPC.Distract(transform, 15f);
         distractEvent.completed = true;
     }
 }
