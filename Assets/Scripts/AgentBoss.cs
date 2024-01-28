@@ -10,8 +10,6 @@ public class AgentBoss : AgentAi
 
     public override void Walking()
     {
-        Debug.Log("running");
-
         if (waypoints.Count == 0.0f) { return; }
         //if (distracted) { return; }
 

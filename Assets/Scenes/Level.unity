@@ -1368,6 +1368,70 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[14]
       value: 
       objectReference: {fileID: 195109831}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1035456422}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1632167020}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 319823580}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 340812588}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 1884214426}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[5]
+      value: 
+      objectReference: {fileID: 1910345949}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[6]
+      value: 
+      objectReference: {fileID: 846598837}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[7]
+      value: 
+      objectReference: {fileID: 90274613}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[8]
+      value: 
+      objectReference: {fileID: 1165114249}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[9]
+      value: 
+      objectReference: {fileID: 648432422}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[10]
+      value: 
+      objectReference: {fileID: 359108265}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[11]
+      value: 
+      objectReference: {fileID: 400175239}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[12]
+      value: 
+      objectReference: {fileID: 321782571}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[13]
+      value: 
+      objectReference: {fileID: 1675232517}
+    - target: {fileID: 4667989341849741666, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
+      propertyPath: waypoints.Array.data[14]
+      value: 
+      objectReference: {fileID: 195109831}
     - target: {fileID: 8709273048632901536, guid: cc35de9bef9bc7c4a96272f13904fb82, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.22
@@ -2673,6 +2737,10 @@ PrefabInstance:
     - target: {fileID: 2712133465172791482, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844819460207689180, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4357033517488848124, guid: 6e4ca5568ef5d454d859cc1f94a0cb6a, type: 3}
       propertyPath: m_Layer
@@ -4260,6 +4328,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245199780}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1262083562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1829941066630950, guid: c1e5af2ff42787c4da9691a81d25269e, type: 3}
+  m_PrefabInstance: {fileID: 1980964480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1262083564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262083562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ce88b024542444f825415f92fc29b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1262083565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262083562}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.68816185, y: 1.3987999, z: 0.7241497}
+  m_Center: {x: 0.012612343, y: 0.7250191, z: 0.0018148422}
 --- !u!4 &1291665835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2395060245804152664, guid: 407dcd7b142d4c34c84c8f72a8aa3dfa, type: 3}
@@ -6132,7 +6238,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1829941066630950, guid: c1e5af2ff42787c4da9691a81d25269e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1262083565}
+    - targetCorrespondingSourceObject: {fileID: 1829941066630950, guid: c1e5af2ff42787c4da9691a81d25269e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1262083564}
   m_SourcePrefab: {fileID: 100100000, guid: c1e5af2ff42787c4da9691a81d25269e, type: 3}
 --- !u!1 &2002856696 stripped
 GameObject:
@@ -6155,9 +6267,11 @@ MonoBehaviour:
   - {fileID: 1165114249}
   - {fileID: 648432422}
   - {fileID: 1675232517}
+  sitting: 0
   currentWaypointIndex: 0
   distanceToWaypoint: 0
   animator: {fileID: 0}
+  intialTransform: {fileID: 0}
   distracted: 0
 --- !u!4 &2014288838 stripped
 Transform:
