@@ -6571,6 +6571,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8676374839324152563, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.056
+      objectReference: {fileID: 0}
     - target: {fileID: 8682701979128908352, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -6943,7 +6947,9 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7374500466023429737, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
+    - {fileID: 4936373144449146558, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
     m_RemovedGameObjects:
     - {fileID: 486438827563616803, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
     - {fileID: 807385954540054933, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
@@ -6965,6 +6971,7 @@ PrefabInstance:
     - {fileID: 5188431943985770781, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
     - {fileID: 6743413017124063157, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
     - {fileID: 7481905080559477287, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
+    - {fileID: 7112145426518958322, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a8d9ce2ebac7e249ae683890dc4d6cd, type: 3}
@@ -13848,6 +13855,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181763509}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1184408045 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4353884561083684751, guid: f67c6ad81a526d441847f461584f68ad, type: 3}
+  m_PrefabInstance: {fileID: 347907014}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1200324147
 GameObject:
   m_ObjectHideFlags: 0
@@ -20796,7 +20808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2131993399
 Transform:
   m_ObjectHideFlags: 0
@@ -21946,6 +21958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BinPrank
       objectReference: {fileID: 0}
+    - target: {fileID: 8776956728722942042, guid: 4db500c190df92443b79a6e6734d0579, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1184408045}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22175,3 +22191,5 @@ SceneRoots:
   - {fileID: 2102355276401339649}
   - {fileID: 2217864632116885591}
   - {fileID: 1636952549}
+  - {fileID: 672507227}
+  - {fileID: 670734854}
