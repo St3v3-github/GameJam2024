@@ -7,6 +7,7 @@ public class DetectionMeter : MonoBehaviour
     [Header("Slider")]
         public Slider detectionSlider;
         public float increaseRate = 1.0f;
+        public float decreaseRate = 1.0f;
     #endregion
 
     public FieldOfView fieldOfView;
@@ -32,7 +33,7 @@ public class DetectionMeter : MonoBehaviour
 
         else
         {
-            detectionSlider.value -= increaseRate * Time.deltaTime;            // Increase the detection meter over time
+            detectionSlider.value -= decreaseRate * Time.deltaTime;            // Increase the detection meter over time
         }
     }
 

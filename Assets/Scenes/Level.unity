@@ -13830,6 +13830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionSlider: {fileID: 847129267}
   increaseRate: 20
+  decreaseRate: 10
   fieldOfView: {fileID: 1207523024}
 --- !u!1 &1210697182
 GameObject:
