@@ -11588,7 +11588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8614796576023089436, guid: 6ee64affdcdc9af418cac77a01fdde39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.663
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 8614796576023089436, guid: 6ee64affdcdc9af418cac77a01fdde39, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12885,16 +12885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea35e697c73df954f89424cfb2d7d6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1165114249}
-  - {fileID: 648432422}
-  - {fileID: 1675232517}
-  sitting: 0
-  currentWaypointIndex: 0
-  distanceToWaypoint: 0
-  animator: {fileID: 0}
-  intialTransform: {fileID: 0}
-  distracted: 0
 --- !u!4 &2014288838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348316935652771172, guid: fba0e7de593a0de4b9495deadb1d9b4f, type: 3}
@@ -14473,8 +14463,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 18939161684955701, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 18939161684955701, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: m_AngularSpeed
-      value: 350
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 18939161684955701, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: m_StoppingDistance
@@ -14502,7 +14496,7 @@ PrefabInstance:
       objectReference: {fileID: 275675438}
     - target: {fileID: 5371888028157096297, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.574
+      value: -16.85
       objectReference: {fileID: 0}
     - target: {fileID: 5371888028157096297, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14604,3 +14598,8 @@ SceneRoots:
   - {fileID: 1473270791}
   - {fileID: 429351651}
   - {fileID: 8999130435538381537}
+  - {fileID: 1827105703}
+  - {fileID: 1692998324}
+  - {fileID: 608515183}
+  - {fileID: 7032827989432835337}
+  - {fileID: 1892734331}
