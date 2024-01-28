@@ -21,4 +21,16 @@ public class Inventory : MonoBehaviour
             Debug.Log(prank.itemName);
         }
     }
+
+    public bool searchInventory(PrankItem item)
+    {
+        foreach (PrankItem itemInInv in items)
+        {
+            if (itemInInv == item)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
