@@ -40,3 +40,8 @@ Maybe look on people's desks for a lighter.
 A weapon? What are you talking about?
 Nah, I left my piece at home.
 George seems like the type to be packing.
+
+//Banana hints
+Why are you looking for a banana peel?
+You'll most likely find a banana peel in the staffroom.
+I left a banana peel on the counter in ther staffroom.

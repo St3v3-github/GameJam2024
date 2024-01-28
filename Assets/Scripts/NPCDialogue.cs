@@ -13,7 +13,7 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     private GameObject prankManagerObject;
     private PrankManager prankManagerScript;
 
-    private enum Prank {Whoopie, Fire};
+    private enum Prank {Whoopie, Fire, Banana};
     private Prank currentPrank = Prank.Whoopie;
 
     void Start()
@@ -85,6 +85,27 @@ public class NPCDialogue : MonoBehaviour, IInteractable
                     if (prankManagerScript.hintIndex == 3)
                     {
                         dialogueManagerScript.ShowText(37);
+                    }
+
+                    break;
+                }
+
+            case Prank.Banana:
+                {
+                    if (prankManagerScript.hintIndex == 1)
+                    {
+                        dialogueManagerScript.ShowText(45);
+                    }
+
+                    if (prankManagerScript.hintIndex == 2)
+                    {
+                        dialogueManagerScript.ShowText(46);
+
+                    }
+
+                    if (prankManagerScript.hintIndex == 3)
+                    {
+                        dialogueManagerScript.ShowText(47);
                     }
 
                     break;

@@ -28,9 +28,9 @@ public class TaskListManager : MonoBehaviour
         
     }
 
-    void UpdateTaskList()
+    void UpdateTaskList(int newCurrentLine)
     {
-        currentLine++;
+        currentLine = newCurrentLine;
 
         textMeshPro.SetText(allLines[currentLine - 1]);
     }
