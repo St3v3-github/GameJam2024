@@ -15,6 +15,10 @@ public class PlayerInteraction : MonoBehaviour
     public Image popupImage;
     public TextMeshProUGUI popupText;
 
+    private bool isSatDown = false;
+    [SerializeField] private TextMeshProUGUI standUpText;
+    private Transform savedPlayerPos;
+
     void Start()
     {
 
@@ -22,6 +26,9 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
+        //Stand Up
+        StandUp();
+
         if (Input.GetKeyDown(pickupKey))
         {
             Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
@@ -112,8 +119,6 @@ public class PlayerInteraction : MonoBehaviour
             // Hide the interaction text if not aiming at anything
             interactText.gameObject.SetActive(false);
         }
-
-
     }
 
     public void PickUpItem(PrankItem item)
@@ -128,5 +133,25 @@ public class PlayerInteraction : MonoBehaviour
         popupText.text = "";
         popupImage.gameObject.SetActive(false);
         popupText.gameObject.SetActive(false);
+    }
+
+    public void SetSitDown()
+    {
+        isSatDown = true;
+        standUpText.gameObject.SetActive(true);
+    }
+
+    private void StandUp()
+    {
+        if (isSatDown && Input.GetKeyDown(pickupKey))
+        {
+            //StandUp
+
+            GetComponent<CharacterController>().enabled = true;
+            GetComponent<Animator>().enabled = true;
+
+            isSatDown=false;
+            standUpText.gameObject.SetActive(false);
+        }
     }
 }
