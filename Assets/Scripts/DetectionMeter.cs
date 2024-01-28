@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DetectionMeter : MonoBehaviour
@@ -7,6 +8,7 @@ public class DetectionMeter : MonoBehaviour
     [Header("Slider")]
         public Slider detectionSlider;
         public float increaseRate = 1.0f;
+        public float decreaseRate = 1.0f;
     #endregion
 
     public FieldOfView fieldOfView;
@@ -20,6 +22,7 @@ public class DetectionMeter : MonoBehaviour
     private void Update()
     {
         DetectionBehaviour();
+        Detected();
     }
 
     private void DetectionBehaviour()
@@ -32,7 +35,15 @@ public class DetectionMeter : MonoBehaviour
 
         else
         {
-            detectionSlider.value -= increaseRate * Time.deltaTime;            // Increase the detection meter over time
+            detectionSlider.value -= decreaseRate * Time.deltaTime;            // Increase the detection meter over time
+        }
+    }
+
+    private void Detected()
+    {
+        if (detectionSlider.value >= 100) 
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 
