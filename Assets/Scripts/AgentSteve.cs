@@ -6,7 +6,7 @@ public class AgentSteve : AgentAi
 {
     [SerializeField] private Transform sickArea;
     public override void Walking()
-    {
+    {/*
         if (waypoints.Count == 0.0f) { return; }
         //if (distracted) { return; }
 
@@ -19,7 +19,7 @@ public class AgentSteve : AgentAi
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
         }
 
-        navMeshAgent.SetDestination(waypoints[currentWaypointIndex].position);
+        navMeshAgent.SetDestination(waypoints[currentWaypointIndex].position);*/
     }
 
     private IEnumerator StandingStill()
