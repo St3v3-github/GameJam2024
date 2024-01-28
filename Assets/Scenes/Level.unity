@@ -927,6 +927,20 @@ MonoBehaviour:
       Data3: 425786808
       Data4: 1197598745
     Path: event:/SFX/dialogue
+  <phoneSound>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <chairSound>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <music>k__BackingField:
     Guid:
       Data1: 782280968
@@ -1818,6 +1832,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2395060245804152664, guid: 407dcd7b142d4c34c84c8f72a8aa3dfa, type: 3}
   m_PrefabInstance: {fileID: 1903248507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &275675438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8614796576023089436, guid: 6ee64affdcdc9af418cac77a01fdde39, type: 3}
+  m_PrefabInstance: {fileID: 1860790617}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &277650083
 PrefabInstance:
@@ -3035,6 +3054,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!4 &502693671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1848513328293810692, guid: 6ee64affdcdc9af418cac77a01fdde39, type: 3}
+  m_PrefabInstance: {fileID: 1860790617}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &510302840
 GameObject:
   m_ObjectHideFlags: 0
@@ -5525,6 +5549,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906119146}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &964329495 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5502201953593610720, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
+  m_PrefabInstance: {fileID: 8999130435538381537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &973571276
 GameObject:
   m_ObjectHideFlags: 0
@@ -12523,7 +12552,7 @@ MonoBehaviour:
   currentWaypointIndex: 0
   distanceToWaypoint: 0
   animator: {fileID: 0}
-  Phone: {fileID: 0}
+  intialTransform: {fileID: 0}
   distracted: 0
 --- !u!4 &2014288838 stripped
 Transform:
@@ -14044,7 +14073,7 @@ PrefabInstance:
     - target: {fileID: 4338114055219339812, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 1443462873}
+      objectReference: {fileID: 964329495}
     - target: {fileID: 4338114055219339812, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: waypoints.Array.size
       value: 2
@@ -14052,11 +14081,11 @@ PrefabInstance:
     - target: {fileID: 4338114055219339812, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 1860790618}
+      objectReference: {fileID: 502693671}
     - target: {fileID: 4338114055219339812, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: waypoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1860790619}
+      objectReference: {fileID: 275675438}
     - target: {fileID: 5371888028157096297, guid: 6f69f917920f7a64ea6b5dd8b6afff99, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.574
@@ -14160,3 +14189,4 @@ SceneRoots:
   - {fileID: 2025556702}
   - {fileID: 1473270791}
   - {fileID: 429351651}
+  - {fileID: 8999130435538381537}
