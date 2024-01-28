@@ -25,12 +25,12 @@ Transform:
   m_GameObject: {fileID: 649107933913993945}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.92127556, z: -0, w: 0.38891053}
-  m_LocalPosition: {x: -13.692248, y: 0.21, z: 4.049039}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 6679052353302777323}
   - {fileID: 1309227931145033270}
+  - {fileID: 6679052353302777323}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -134.227, z: 0}
 --- !u!1 &1314431782572522038
@@ -83,7 +83,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4745,7 +4745,7 @@ GameObject:
   - component: {fileID: 1222983832386448918}
   - component: {fileID: 1224428082445183560}
   m_Layer: 0
-  m_Name: FX_Confetti_01
+  m_Name: confetti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4760,7 +4760,7 @@ Transform:
   m_GameObject: {fileID: 1314859985632763512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.138, y: 0, z: 0}
+  m_LocalPosition: {x: 0.1442, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4785,7 +4785,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -9710,7 +9710,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -14602,8 +14602,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4091153128976698406}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.0002, y: 0.0002, z: 0.0002}
   m_ConstrainProportionsScale: 1
   m_Children: []
