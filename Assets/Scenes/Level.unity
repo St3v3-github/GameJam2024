@@ -535,6 +535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaskListManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6782395885234393884, guid: e607160643000cf49871659a804eaa4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
