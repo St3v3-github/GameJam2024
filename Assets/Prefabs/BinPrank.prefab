@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 4861009712058856990}
   - component: {fileID: 8776956728722942042}
   - component: {fileID: 8123985880152658330}
+  - component: {fileID: 2005890140754813083}
   m_Layer: 0
   m_Name: BinPrank
   m_TagString: Untagged
@@ -168,8 +169,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b66c9db5574f4284399948e5f6abab9b, type: 2}
   - {fileID: 11400000, guid: b66c9db5574f4284399948e5f6abab9b, type: 2}
   - {fileID: 11400000, guid: feed1dbefedbbd54e8f438d5f1675f72, type: 2}
-  requiredEvents:
-  - {fileID: 11400000, guid: 4312e2093772f2b468eb57c32b8d7b91, type: 2}
+  requiredEvents: []
   instructions: []
   active: 0
   completed: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireLocation: {fileID: 8655938274663813847}
-  Fire: {fileID: 0}
+  Fire: {fileID: 1432027998230830046, guid: 38802c8d00c9bd44fb3c211dc33961c5, type: 3}
 --- !u!65 &8123985880152658330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -209,3 +209,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.4, y: 0.5, z: 0.4}
   m_Center: {x: 0, y: 0.25, z: 0.09}
+--- !u!114 &2005890140754813083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7621023105376832407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e431d02a751918b4281d5c07d3d6af7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLocation: {fileID: 8655938274663813847}
+  Fire: {fileID: 1432027998230830046, guid: 38802c8d00c9bd44fb3c211dc33961c5, type: 3}

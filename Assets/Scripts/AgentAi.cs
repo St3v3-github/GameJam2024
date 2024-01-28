@@ -60,6 +60,7 @@ public class AgentAi : MonoBehaviour
     public void Distract(Transform distractLocation, float time)
     {
         distracted = true;
+        animator.SetBool("IsWalking", true);
         navMeshAgent.SetDestination(distractLocation.position);
         StartCoroutine(DistractTimer(time));
     }
@@ -71,9 +72,10 @@ public class AgentAi : MonoBehaviour
             float distance = Vector3.Distance(intialPos, transform.position);
             if (distance <= 1.1f)
             {
+                animator.SetBool("IsWalking", false);
                 distracted = false;
                 returning = false;
-                Debug.Log("returned");
+                StartCoroutine(angryTimer());
             }
         }
     }
@@ -85,7 +87,12 @@ public class AgentAi : MonoBehaviour
         navMeshAgent.SetDestination(intialPos);
     }
 
-        public void OnFootstep()
+    private IEnumerator angryTimer()
+    {
+        yield return new WaitForSeconds(2f);
+    }
+
+    public void OnFootstep()
     {
 
     }
